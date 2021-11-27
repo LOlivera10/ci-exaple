@@ -11,6 +11,8 @@ namespace Domain.Entities
 
         public int Capacidad { get; set; }
 
+        public int Capacidad2 { get; set
+
         public List<Funcion> Funciones { get; set; }
     }
 }
