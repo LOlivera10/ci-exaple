@@ -26,6 +26,14 @@ jobs:
       with:
         # Set the sonar.projectBaseDir analysis property
         projectBaseDir: /
+        args: >
+          -Dsonar.organization=unaj
+          -Dsonar.projectKey=example
+          -Dsonar.python.coverage.reportPaths=coverage.xml
+          -Dsonar.sources=lib/
+          -Dsonar.test.exclusions=tests/**
+          -Dsonar.tests=tests/
+          -Dsonar.verbose=true
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
