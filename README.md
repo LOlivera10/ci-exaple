@@ -1,3 +1,0 @@
-# ci-exaple
-
-Prueba CI
